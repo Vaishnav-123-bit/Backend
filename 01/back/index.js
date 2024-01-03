@@ -24,6 +24,31 @@ app.get('/api/jokes',(req,res)=>{
     res.send(joke)
 })
 
+
+app.get('/api/helper',(req,res)=>{
+    const news=[
+        {
+            id:"1",
+            name:"abc",
+            val:"this is joke 1"
+
+        },
+        {
+            id:"2",
+            name:"ab3",
+            jval:"this is joke 1"
+
+        },
+        {
+            id:"2",
+            name:"ab3",
+            jval:"this is joke 1"
+
+        }
+    ]
+    res.send(news)
+})
+
 app.listen(port,()=>{
     console.log(`listening : http://localhost:${port}`)
 })

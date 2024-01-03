@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import axios from 'axios'
+import News from './News'
 
 function App() {
   const [jokes,setJokes] = useState([])
@@ -32,6 +33,8 @@ function App() {
           </div>
         ))
       }
+
+      <News/>
     </>
   )
 }
